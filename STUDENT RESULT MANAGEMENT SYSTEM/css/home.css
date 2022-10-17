@@ -1,0 +1,95 @@
+body{
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: lightskyblue;
+    margin: 0;
+}
+
+.title{
+    display: flex;
+    font-size: 3em;
+    justify-content: center;
+    color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    align-items: center;
+    height: 80px;
+}
+/* title grid */
+.logo{
+    width: 150px;
+    height: auto;
+}
+.heading{
+    font-size: 60px;
+}
+
+
+/*  */
+.main{
+    display: grid;
+    align-items: center;
+    font-size: 20px;
+    padding-top: 80px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.main p{
+    margin: 0;
+    font-size: 25px;
+    letter-spacing: 3px;
+    line-height: 3;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* navigation bar */
+ul{
+    list-style-type: none;
+    margin: 30px 0;
+    padding: 0;
+    display: flex;
+    overflow: hidden;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    justify-content: space-evenly;
+    border-style: solid;
+    border-width: 1px 0 1px 0;
+}
+
+
+li a,.dropbtn{
+    display: inline-block;
+    text-decoration: none;
+    color: brown;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 5px 50px;
+}
+
+li a:hover, .dropdown:hover {
+    background-color: blue;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color:  lightblue;
+}
+
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
