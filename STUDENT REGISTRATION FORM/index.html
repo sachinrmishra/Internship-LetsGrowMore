@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+    <div class="main">
+    <div class="col">
+    <form>
+        <h2>Enroll Yourself</h2>
+        <table border="0" cellpadding="5">
+            <tr>
+                <td style="width: 35%;"><label for="name">Name: </label></td>
+                <td><input type="text" id="Name"  name="Name" class="inp"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email: </label></td>
+                <td><input type="text" id="Email" name="Email" class="inp"></td>
+            </tr>
+            <tr>
+                <td><label for="website">Website Link: </label></td>
+                <td><input type="text" id="website"  name="website" class="inp"></td>
+            </tr>
+            <tr>
+                <td><label for="Image">Upload Image: </label></td>
+                <td><input type="file" id="Image" name="Image" class="custom-file-input" onchange="image(event)" class="inp"></td>
+            </tr>
+            <tr>
+                <td><label>Gender:</label></td>
+                <td><input name="gender" type="radio" id="Male" value="Male">  Male</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input name="gender" type="radio" id="Female" value="Female">  Female</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input name="gender" type="radio" id="Others" value="Others">  Others</td>
+            </tr>
+            <tr style="width: 35%; word-spacing: 4.5px;"">
+                <td><label>Skills: </label></td>
+                <td><input name="html" type="checkbox" value="HTML" id="html"> HTML
+                    <input name="css" type="checkbox" value="CSS" id="css">  CSS 
+                    <input name="js" type="checkbox" value="JavaScript" id="js">  JavaScript <br>
+                    <input name="python" type="checkbox" value="Python" id="python">  JAVA
+                    <input name="java" type="checkbox" value="Java" id="java">PHP
+                </td>
+            </tr>
+            <tr>
+                <td align="right"><div class="btn">
+                    <button type="button" id="btn" class="button">Submit</button></div>
+                </td>
+                <td align="center">
+                    <div class="btn">
+                    <button type="clear" class="button">Clear</button>   </div> 
+                </td>
+            </tr>
+        </table>
+  
+    </form>
+</div>
+
+<div class="col">
+    <div class="display">
+        <h2 class="h-enrol">Enrolled Students</h2>
+        <div class="tp">
+        <div class="cards"></div>
+    </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
